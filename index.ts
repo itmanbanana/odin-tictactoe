@@ -98,4 +98,4 @@ const gameManager = (() => {
     return { startGame }
 })();
 
-gameManager.startGame();
+// gameManager.startGame();

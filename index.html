@@ -10,7 +10,38 @@
 </head>
 
 <body>
-    <h1>Odin Tic Tac Toe</h1>
+    <header>
+        <div class="header-title">Odin Tic Tac Toe</div>
+    </header>
+    <div class="container">
+        <div class="game-names">
+            <div class="game-names-text">Enter player names:</div>
+            <div class="game-names-grid">
+                <label for="playerX">Player X:</label>
+                <input type="text" id="playerX" value="Player 1" maxlength="20">
+                <label for="playerO">Player O:</label>
+                <input type="text" id="playerO" value="Player 2" maxlength="20">
+            </div>
+        </div>
+        <div class="game-board">
+            <button class="game-board-button" data-coordinate="00"></button>
+            <button class="game-board-button" data-coordinate="01"></button>
+            <button class="game-board-button" data-coordinate="02"></button>
+            <button class="game-board-button" data-coordinate="10"></button>
+            <button class="game-board-button" data-coordinate="11"></button>
+            <button class="game-board-button" data-coordinate="12"></button>
+            <button class="game-board-button" data-coordinate="20"></button>
+            <button class="game-board-button" data-coordinate="21"></button>
+            <button class="game-board-button" data-coordinate="22"></button>
+        </div>
+        <div class="game-settings">
+            <div class="game-status">X's turn</div>
+            <button class="game-restart-button">Restart Game</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-text">Created by itmanbanana 2026</div>
+    </footer>
 </body>
 
 </html>

@@ -1,16 +1,4 @@
 const validStates = "XO";
-const movePositions = "012";
-class Player {
-    _turn;
-    _name;
-    constructor(turn = false, name) {
-        this._turn = turn;
-        this._name = name;
-    }
-    get turn() { return this._turn; }
-    get name() { return this._name; }
-    toggleTurn() { this._turn = !this._turn; }
-}
 const board = (() => {
     let boardState = [["", "", ""],
         ["", "", ""],
@@ -53,8 +41,6 @@ const board = (() => {
     return { resetBoardState, getBoardState, setBoardState, checkWin, checkTie };
 })();
 const gameManager = (() => {
-    // let player1: Player = new Player(true, "X");
-    // let player2: Player = new Player(false, "O");
     let currentTurn = "X";
     const startGame = () => {
         board.resetBoardState();
@@ -96,6 +82,6 @@ const gameManager = (() => {
     };
     return { startGame };
 })();
-gameManager.startGame();
 export {};
+// gameManager.startGame();
 //# sourceMappingURL=index.js.map
